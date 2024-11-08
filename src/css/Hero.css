@@ -1,0 +1,46 @@
+.hero-section {
+  user-select: none;
+  height: 70vh;
+}
+
+.privet,
+.hero-text,
+.names {
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 100px;
+}
+.privet {
+  font-size: 200px;
+  margin-bottom: 0;
+}
+.welcome-text2 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.names-div {
+  display: flex;
+  gap: 10px;
+}
+.names {
+  color: var(--contrast);
+}
+.text-line {
+  height: 85px;
+  width: 3px;
+  background-color: var(--norm-color);
+  transform: translateY(5px);
+  animation: opacityMove 1s ease-in-out infinite;
+  border-radius: 8px;
+}
+
+@keyframes opacityMove {
+  from,
+  to {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}

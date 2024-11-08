@@ -1,0 +1,32 @@
+.swiper {
+  width: 200px;
+  height: 280px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: var(--bg-dark);
+}
+.card-content > img {
+  border-radius: 8px;
+}
+.card-content > h4 {
+  color: var(--norm-color);
+}
+
+/* .swiper-slide:nth-child(1n) {
+  background-color: var(--contrast);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: var(--light-color);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: var(--bg-dark);
+} */

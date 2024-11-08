@@ -1,0 +1,98 @@
+* {
+  scroll-behavior: smooth;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+:root {
+  --bg-color: #252422;
+  --bg-dark: #1d1d1c;
+  --light-color: #403d39;
+  --norm-color: #ccc5b9;
+  --contrast: #eb5e28;
+  --transition-duration: 0.8s;
+  cursor: url(../assets/cursor/arrow_ultra.cur), auto;
+}
+.barbie-theme {
+  --bg-color: #ffe5ec;
+  --bg-dark: #fed0dc;
+  --light-color: #ffb3c6;
+  --norm-color: #ff8fab;
+  --contrast: #fa3869;
+  cursor: url(../assets/cursor/Pink/arrow_ultra_magenta.cur), auto;
+}
+.green-theme {
+  --bg-color: #dad7cd;
+  --bg-dark: #c8c5bc;
+  --light-color: #588157;
+  --norm-color: #3a5a40;
+  --contrast: #463929;
+  cursor: url(../assets/cursor/Green/arrow_ultra_green.cur), auto;
+}
+.red-theme {
+  --bg-color: #250902;
+  --bg-dark: #1d0803;
+  --light-color: #8d99ae;
+  --norm-color: #ef233c;
+  --contrast: #edf2f4;
+  cursor: url(../assets/cursor/Red/arrow_ultra_red.cur), auto;
+}
+.blue-theme {
+  --bg-color: #f1faee;
+  --bg-dark: #d9e2d6;
+  --light-color: #a8dadc;
+  --norm-color: #1d3557;
+  --contrast: #e63946;
+  cursor: url(../assets/cursor/Blue/arrow_ultra_blue.cur), auto;
+}
+body {
+  background-color: var(--bg-color);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--norm-color);
+  transition: background-color var(--transition-duration),
+    color var(--transition-duration);
+}
+
+body::-webkit-scrollbar {
+  width: 5px; /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: var(--bg-dark); /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--contrast); /* цвет плашки */
+  border-radius: 20px; /* закругления плашки */
+}
+
+a {
+  cursor: url(../assets/cursor/cross.cur), auto;
+  text-decoration: none;
+  color: var(--norm-color);
+}
+button {
+  cursor: url(../assets/cursor/cross.cur), auto;
+  padding: 10px 15px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid var(--contrast);
+  color: var(--norm-color);
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  color: var(--contrast);
+}
+img {
+  height: auto;
+  object-fit: contain;
+}
+ul {
+  list-style: none;
+}
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0px);
+}

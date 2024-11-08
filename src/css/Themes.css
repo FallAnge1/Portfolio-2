@@ -1,0 +1,28 @@
+.themes {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.theme {
+  height: 30px;
+  width: 30px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  cursor: url(../assets/cursor/cross.cur), auto;
+  transition: transform 0.2s ease-out;
+}
+.theme:hover {
+  transform: scale(1.1);
+}
+.barbie {
+  background-color: #fb6f92;
+}
+.green {
+  background-color: #3a5a40;
+}
+.red {
+  background-color: #c1121f;
+}
+.blue {
+  background-color: #457b9d;
+}
